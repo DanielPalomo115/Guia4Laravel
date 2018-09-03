@@ -16,6 +16,12 @@ class CreateTasksTable extends Migration
             $table->increments('id');
             $table->string('name');
             $table->timestamps();
+            $table->string('descrpcion');
+            $table->string('calorias');
+            $table->datetime('fecha');
+
+
+
         });
     }
 

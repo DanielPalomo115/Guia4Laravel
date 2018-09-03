@@ -20,6 +20,12 @@ Route::get('/', function () {
 Route::post('/task', function (Request $request) {
 $validator = Validator::make($request->all(), [
         'name' => 'required|max:255',
+        'descripcion' => 'required|max:255',
+        'calorias' => 'required|max:255',
+        'fecha' => 'required|max:255',
+
+
+
     ]);
 
     if ($validator->fails()) {
@@ -30,6 +36,12 @@ $validator = Validator::make($request->all(), [
 
     $task = new Task;
     $task->name = $request->name;
+    $task->descripcion = $request->descripcion;
+    $task->calorias = $request->calorias;
+    $task->fecha = $request->fecha;
+
+
+
     $task->save();
 
     return redirect('/');});
@@ -42,3 +54,4 @@ $validator = Validator::make($request->all(), [
 
     return redirect('/');
 });
+
