@@ -38,7 +38,7 @@
                             <label for="task-descripcion" class="col-sm-3 control-label">Calorias</label>
 
                             <div class="col-sm-6">
-                                <input type="text" name="calorias" id="task-calorias" class="form-control" value="{{ old('task') }}">
+                                <input type="number" name="calorias" id="task-calorias" class="form-control" value="{{ old('task') }}">
 
                             </div>
                         </div>

@@ -17,7 +17,7 @@ class CreateTasksTable extends Migration
             $table->string('name');
             $table->timestamps();
             $table->string('descrpcion');
-            $table->string('calorias');
+            $table->float('calorias');
             $table->datetime('fecha');
 
 

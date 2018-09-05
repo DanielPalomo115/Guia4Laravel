@@ -22,7 +22,7 @@ $validator = Validator::make($request->all(), [
         'name' => 'required|max:255',
         'descripcion' => 'required|max:255',
         'calorias' => 'required|max:255',
-        'fecha' => 'required|max:255',
+        'fecha' => 'required',
 
 
 
